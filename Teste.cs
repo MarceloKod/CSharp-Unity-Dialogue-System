@@ -10,7 +10,6 @@ public class Teste : MonoBehaviour
     public Canvas canvas;
     public int posDiag;
     public bool colisao = false;
-    public GameObject go;
 
 
     // Start is called before the first frame update
@@ -48,7 +47,6 @@ public class Teste : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && posDiag > text.Length)
         {
             canvas.enabled = false;
-            //return;
         }
     }
     private void UpdateText(string msg)
